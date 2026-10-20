@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CS309 lab project: first HTML and CSS pages.">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Home - CS309 Lab</title>
+    </head>
+
+    <body>
+        <a class="skip-link" href="#main">Skip to main content</a>
+
+        <header class="site-header">
+            <div class="container">
+                <p class="site-title">We Are in Testing Phase</p>
+
+                <nav class="site-nav" aria-label="Main">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="components.html">Components</a>
+                    <a href="validation.html">Validation</a>
+                    <a href="data.html">Data</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main" class="container">
+            <h1>Just Testing</h1>
+            <p>Initial Project to HTML in CS309</p>
+            <p id="p1">This Exact Words will be <strong>Bold</strong> and <em>Italic</em>... and the background of this entire paragraph will be Red Colored</p>
+
+            <div class="table-wrap" role="region" aria-labelledby="students-caption" tabindex="0">
+                <table>
+                    <caption id="students-caption">Student list</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Specialization</th>
+                            <th scope="col">Level</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr id="tbodygray"><td>1</td><td>Muhammad Kamal</td><td>2427090</td><td>Math / Computer Science</td><td>3rd</td></tr>
+                        <tr id="tbodyblue"><td>1</td><td>Muhammad Kamal</td><td>2427090</td><td>Math / Computer Science</td><td>3rd</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2>Courses In This Term:</h2>
+            <ul class="grid">
+                <li class="card course" id="cs309"><span class="course-code">CS309</span> System</li>
+                <li class="card course" id="cs307"><span class="course-code">CS307</span> Data Bases</li>
+                <li class="card course" id="cs305"><span class="course-code">CS305</span> Algorithm</li>
+            </ul>
+
+            <p class="closing">
+                <strong>We are in the first project in CS309 (System)... We are learning HTML and CSS in this Lab</strong>
+            </p>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2026 Cairo University Faculty Of Science</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Course registration contact form for the CS309 lab project.">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Contact - CS309 Lab</title>
+    </head>
+
+    <body>
+        <a class="skip-link" href="#main">Skip to main content</a>
+
+        <header class="site-header">
+            <div class="container">
+                <p class="site-title">We Are in Testing Phase</p>
+
+                <nav class="site-nav" aria-label="Main">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html" aria-current="page">Contact</a>
+                    <a href="components.html">Components</a>
+                    <a href="validation.html">Validation</a>
+                    <a href="data.html">Data</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="main" class="container">
+            <h1 id="contactHeader">Contact Form</h1>
+            <p class="hint">All fields are required except the gender and the review.</p>
+
+            <form id="contactForm" class="card form-card" action="/submit" method="post">
+                <div id="PersonalData" class="form-grid">
+                    <fieldset class="full">
+                        <legend>Gender</legend>
+                        <div class="choices">
+                            <label class="choice" for="male">
+                                <input type="radio" id="male" name="Gender" value="Male">
+                                Male
+                            </label>
+                            <label class="choice" for="female">
+                                <input type="radio" id="female" name="Gender" value="Female">
+                                Female
+                            </label>
+                            <label class="choice" for="other">
+                                <input type="radio" id="other" name="Gender" value="Other">
+                                Other
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="FullName">Full name</label>
+                        <input type="text" id="FullName" name="FullName" placeholder="Muhammad Kamal" autocomplete="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="Email" placeholder="madakamal140@gmail.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="Code">Student code</label>
+                        <input type="number" id="Code" name="Code" placeholder="2427090" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="Level">Level</label>
+                        <input type="number" id="Level" name="Level" placeholder="3" min="1" max="4" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="PhoneNumber">Phone number</label>
+                        <input type="tel" id="PhoneNumber" name="PhoneNumber" placeholder="01068030867" autocomplete="tel" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="DOB">Date of birth</label>
+                        <input type="date" id="DOB" name="DOB" autocomplete="bday" required>
+                    </div>
+
+                    <div class="field full">
+                        <label for="Specialization">Specialization</label>
+                        <select id="Specialization" name="Specialization" required>
+                            <option value="">Choose your specialization</option>
+                            <option value="Mathematics">Mathematics</option>
+                            <option value="Mathematics/Computer Science">Mathematics/Computer Science</option>
+                            <option value="Mathematics/Statistics">Mathematics/Statistics</option>
+                            <option value="Mathematics/Physics">Mathematics/Physics</option>
+                            <option value="Computer Science">Computer Science</option>
+                        </select>
+                    </div>
+                </div>
+
+                <fieldset>
+                    <legend>Choose course(s) from the following</legend>
+                    <div class="choices stacked">
+                        <label class="choice">
+                            <input type="checkbox" name="Course" value="CS309">
+                            CS309 - System Design
+                        </label>
+                        <label class="choice">
+                            <input type="checkbox" name="Course" value="CS307">
+                            CS307 - Data Bases
+                        </label>
+                        <label class="choice">
+                            <input type="checkbox" name="Course" value="CS305">
+                            CS305 - Algorithms
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="field">
+                    <label for="Review">Review of CS309 Project</label>
+                    <textarea id="Review" name="Review" rows="4">We are in the first project in CS309 (System)... We are learning HTML and CSS in this Lab</textarea>
+                </div>
+
+                <button type="submit" id="Submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <p>&copy; 2026 Cairo University Faculty Of Science</p>
+            </div>
+        </footer>
+    </body>
+</html>
